@@ -1,18 +1,20 @@
 #include<stdio.h>
-void main(){
-   int i, num, n, count;
-   printf("Enter the range: ");
-   scanf("%d", &n);
-   printf("The prime numbers in between the range 1 to %d:",n);
-   for(num = 1;num<=n;num++){
-      count = 0;
-      for(i=2;i<=num/2;i++){
-         if(num%i==0){
-            count++;
-         break;
-      }
-   }
-   if(count==0 && num!= 1)
-      printf("%d ",num);
-   }
+int main()
+{
+    int n,i,prime,j;
+    printf("Enter a value to find series of Prime Number : ");
+    scanf("%d",&n);
+    printf("Prime Numbers till %d: \n", n);
+    for(i=1; i<=n; i++)
+    {
+        prime=0;
+        for(j=1; j<=n; j++)
+        {
+            if(i%j==0)
+                prime++;
+        }
+        if(prime==2)
+            printf("%d " ,i);
+    }
+    return 0;
 }
