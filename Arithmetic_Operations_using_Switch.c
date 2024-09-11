@@ -3,11 +3,12 @@
 
 int main()
 {
-    int a,b, op;
-    printf("1. Addition");
+    int a,b, op; //Intialising variables
+    /*printf("1. Addition");
     printf("\n2. Subtraction");
     printf("\n3. Multiplication");
-    printf("\n4. Division");
+    printf("\n4. Division");*/
+    printf("1.Addition \n2.Subtraction \n3.Multiplication \n4.Division");
     printf("\nEnter value of a: ");
     scanf("%d", &a);
     printf("\nEnter value of b: ");
